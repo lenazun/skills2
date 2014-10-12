@@ -65,10 +65,17 @@ Given a list of numbers, return list of number pairs that sum to zero
 """
 def sum_zero(list1):
 
-	pass
+	l = []
 
+	for i in list1:
 
-sum_zero(list1)
+		for x in list1:
+			if i + x == 0:
+				l.append((i, x))
+
+	print list(set(l))
+
+#sum_zero(list1)
 
 """
 Given a list of words, return a list of words with duplicates removed
@@ -101,7 +108,7 @@ def word_length(words):
 
 	print by_number
 
-word_length(words)	
+#word_length(words)	
 
 
 
@@ -131,3 +138,7 @@ man         matey
 Write a program that asks the user to type in a sentence and then
 print the sentece translated to pirate.
 """
+### See pirate.py ####
+
+
+
